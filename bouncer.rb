@@ -58,7 +58,7 @@ end
 
 def check_age (age)
   if  age >= 25
-     "===============================================================
+    "===============================================================
     BOUNCER SAYS:As you are old enough to rent a car, you are
     probably too old to come in here. I mean, you can come in
     and drink and smoke and do whatever, but you are going to
@@ -68,7 +68,7 @@ def check_age (age)
     elsif age >=21
   "===============================================================
     BOUNCER SAYS:Come on in! Drink and smoke to your heart's
-       delight. And don't forget to vote in tomorrow's primary.
+      delight. And don't forget to vote in tomorrow's primary.
   ==============================================================="
     elsif age >= 18
          "
@@ -81,8 +81,8 @@ def check_age (age)
   BOUNCER SAYS: Go home. It is past your bedtime.
   ==============================================================="
   end
-
 end
+
 
 
 def sovereign
