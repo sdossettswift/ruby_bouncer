@@ -1,6 +1,10 @@
-puts "WELCOME TO DORSIA"
-sleep 2
-puts "
+def bouncer_greeting
+  puts "
+                          =======================
+                          =  WELCOME TO DORSIA  =
+                          ======================="
+  sleep 2
+  puts "
                                   ~~=+++++==+
                                  7~~+++?++,.+=
                                 ~...........==
@@ -29,28 +33,57 @@ puts "
                           :...........................~
                                                            "
 
-puts "Mind the velvet rope. You gotta wait, we are at capacity. "
-sleep 3
-puts "No, I do not see your name on the VIP list. Get back in line, or you and your friends will never get in."
-sleep 15
+  puts "
+  ===============================================================
+  BOUNCER SAYS: Mind the velvet rope. You gotta wait, we are at
+  capacity.
+  =============================================================== "
+  sleep 3
+  puts "
+  ===============================================================
+  BOUNCER SAYS: No, I do not see your name on the VIP list. Get
+  back in line, or you and your friends will never get in.
+  ==============================================================="
+  sleep 15
 
-puts "Let me see your ID"
-puts "How old are you?"
+  puts "
+  ===============================================================
+  BOUNCER SAYS: OK. Let me see your ID
+  ==============================================================="
+  puts "    How old are you?"
 
-age= gets.chomp.to_i
+  age= gets.chomp.to_i
+  return age
+end
 
 def check_age (age)
   if  age >= 25
-     "As you are old enough to rent a car, you are probably too old to come in here. I mean, you can come in and drink and smoke and do whatever, but you are going to be the only one who is even close to a quarter-life crisis."
-  elsif age >=21
-    "Come on in! Drink and smoke to your heart's delight. And don't forget to vote in tomorrow's primary."
-  elsif age >= 18
-       "You can smoke and vote, but you can't come in."
-  else
-       "Go home. It is past your bedtime."
-
+     "===============================================================
+    BOUNCER SAYS:As you are old enough to rent a car, you are
+    probably too old to come in here. I mean, you can come in
+    and drink and smoke and do whatever, but you are going to
+    be the only one who is even close to a quarter-life
+    crisis.
+  ==============================================================="
+    elsif age >=21
+      "===============================================================
+      Come on in! Drink and smoke to your heart's delight. And
+      don't forget to vote in tomorrow's primary.
+  ==============================================================="
+    elsif age >= 18
+         "
+         ===============================================================
+         You can smoke and vote, but you can't come in.
+  ==============================================================="
+    else
+         "
+  ===============================================================
+  Go home. It is past your bedtime.
+  ==============================================================="
   end
 
 end
 
-puts check_age(age)
+response_age = bouncer_greeting
+
+puts check_age(response_age)
