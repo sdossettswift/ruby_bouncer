@@ -39,16 +39,13 @@ def bouncer_greeting
   puts "
   ===============================================================
   BOUNCER SAYS: Mind the velvet rope. You gotta wait, we are at
-  capacity.
+  capacity. No, I do not see your name on the VIP list. Get
+  back in line, or you and your friends will never get in.
   =============================================================== "
   `say 'No, I do not see your name on the VIP list. Get
   back in line, or you and your friends will never get in.'`
-  puts "
-  ===============================================================
-  BOUNCER SAYS: No, I do not see your name on the VIP list. Get
-  back in line, or you and your friends will never get in.
-  ==============================================================="
-  sleep 15
+
+  sleep 10
 
   `say 'OK. Let me see your ID. How old are you?'`
 
@@ -85,7 +82,7 @@ def check_age (age)
   ==============================================================="
     else
         `say 'You are way too young.'`
-         "
+    puts "
   ===============================================================
   BOUNCER SAYS: Go home. It is past your bedtime.
   ==============================================================="
