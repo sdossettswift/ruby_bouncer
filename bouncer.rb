@@ -1,5 +1,5 @@
 puts "WELCOME TO DORSIA"
-# sleep 2
+sleep 2
 puts "
                                   ~~=+++++==+
                                  7~~+++?++,.+=
@@ -30,9 +30,9 @@ puts "
                                                            "
 
 puts "Mind the velvet rope. You gotta wait, we are at capacity. "
-# sleep 3
+sleep 3
 puts "No, I do not see your name on the VIP list. Get back in line, or you and your friends will never get in."
-# sleep 15
+sleep 15
 
 puts "Let me see your ID"
 puts "How old are you?"
