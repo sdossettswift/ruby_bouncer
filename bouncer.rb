@@ -56,33 +56,7 @@ def bouncer_greeting
   return age
 end
 
-def check_age (age)
-  if  age >= 25
-     "===============================================================
-    BOUNCER SAYS:As you are old enough to rent a car, you are
-    probably too old to come in here. I mean, you can come in
-    and drink and smoke and do whatever, but you are going to
-    be the only one who is even close to a quarter-life
-    crisis.
-  ==============================================================="
-    elsif age >=21
-      "===============================================================
-      Come on in! Drink and smoke to your heart's delight. And
-      don't forget to vote in tomorrow's primary.
-  ==============================================================="
-    elsif age >= 18
-         "
-         ===============================================================
-         You can smoke and vote, but you can't come in.
-  ==============================================================="
-    else
-         "
-  ===============================================================
-  Go home. It is past your bedtime.
-  ==============================================================="
-  end
 
-end
 
 quit = "N"
 while quit.upcase == "N"
@@ -91,28 +65,3 @@ while quit.upcase == "N"
   puts "Quit? Y/N"
   quit=gets.chomp.upcase
 end
-
-# if quit == "Y"
-#   exit
-# else
-#   response_age = bouncer_greeting
-#
-#   puts check_age(response_age)
-# end
-#
-# unless quit =="Y"
-#   response_age = bouncer_greeting
-#
-#   puts check_age(response_age)
-#
-#   puts "Quit? Y/N"
-#   quitter=gets.chomp.upcase
-#
-#   if quit == "Y"
-#     exit
-#   else
-#     response_age = bouncer_greeting
-#
-#     puts check_age(response_age)
-#   end
-# end
