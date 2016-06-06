@@ -67,18 +67,18 @@ def check_age (age)
   ==============================================================="
     elsif age >=21
       "===============================================================
-      Come on in! Drink and smoke to your heart's delight. And
+      BOUNCER SAYS:Come on in! Drink and smoke to your heart's delight. And
       don't forget to vote in tomorrow's primary.
   ==============================================================="
     elsif age >= 18
          "
          ===============================================================
-         You can smoke and vote, but you can't come in.
+         BOUNCER SAYS: You can smoke and vote, but you can't come in.
   ==============================================================="
     else
          "
   ===============================================================
-  Go home. It is past your bedtime.
+  BOUNCER SAYS: Go home. It is past your bedtime.
   ==============================================================="
   end
 
@@ -91,28 +91,3 @@ while quit.upcase == "N"
   puts "Quit? Y/N"
   quit=gets.chomp.upcase
 end
-
-# if quit == "Y"
-#   exit
-# else
-#   response_age = bouncer_greeting
-#
-#   puts check_age(response_age)
-# end
-#
-# unless quit =="Y"
-#   response_age = bouncer_greeting
-#
-#   puts check_age(response_age)
-#
-#   puts "Quit? Y/N"
-#   quitter=gets.chomp.upcase
-#
-#   if quit == "Y"
-#     exit
-#   else
-#     response_age = bouncer_greeting
-#
-#     puts check_age(response_age)
-#   end
-# end
