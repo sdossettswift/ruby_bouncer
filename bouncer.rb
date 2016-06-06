@@ -84,6 +84,35 @@ def check_age (age)
 
 end
 
-response_age = bouncer_greeting
+quit = "N"
+while quit.upcase == "N"
+  response_age = bouncer_greeting
+  puts check_age(response_age)
+  puts "Quit? Y/N"
+  quit=gets.chomp.upcase
+end
 
-puts check_age(response_age)
+# if quit == "Y"
+#   exit
+# else
+#   response_age = bouncer_greeting
+#
+#   puts check_age(response_age)
+# end
+#
+# unless quit =="Y"
+#   response_age = bouncer_greeting
+#
+#   puts check_age(response_age)
+#
+#   puts "Quit? Y/N"
+#   quitter=gets.chomp.upcase
+#
+#   if quit == "Y"
+#     exit
+#   else
+#     response_age = bouncer_greeting
+#
+#     puts check_age(response_age)
+#   end
+# end
